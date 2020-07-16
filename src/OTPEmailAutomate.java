@@ -26,7 +26,7 @@ public class OTPEmailAutomate {
 			if (bb.get(i).getText().equalsIgnoreCase("Search mail subject")) {
 //Click the email 
 				bb.get(i).click();
-				Thread.sleep(25000);
+				Thread.sleep(5000);
 				String str = driver.findElement(By.xpath("//div[@class='ng_mail_text'] //b[3]")).getText();
 				System.out.println(str);
 				break;
